@@ -39,6 +39,22 @@ out/
 ### Kotlin ###
 .kotlin
 *.log
-build/
 .gradle/
 *.jar
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Database
+*.db
+*.sqlite
+
+# Temporary files
+*.tmp
+*.temp
+
+# Application specific
+application-prod.yml
+application-secret.yml
