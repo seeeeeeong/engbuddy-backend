@@ -28,7 +28,6 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 //	implementation("org.springframework.boot:spring-boot-starter-security")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
@@ -37,6 +36,13 @@ dependencies {
 	// Database
 	runtimeOnly("org.postgresql:postgresql")
 	runtimeOnly("com.h2database:h2")
+
+	// Exposed
+	implementation("org.jetbrains.exposed:exposed-core:0.44.1")
+	implementation("org.jetbrains.exposed:exposed-dao:0.44.1")
+	implementation("org.jetbrains.exposed:exposed-jdbc:0.44.1")
+	implementation("org.jetbrains.exposed:exposed-kotlin-datetime:0.44.1")
+	implementation("org.jetbrains.exposed:exposed-spring-boot-starter:0.44.1")
 
 	// Kotlin
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
@@ -49,6 +55,8 @@ dependencies {
 	// Coroutines
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
